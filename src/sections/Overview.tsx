@@ -45,11 +45,11 @@ export default function Overview() {
                 {r.item}
               </div>
               <div className="border-b border-black/10 px-5 py-4 text-sm leading-relaxed text-black/55">
-                <span className="font-mono-num mr-2 rounded bg-black/80 px-1.5 py-0.5 text-[9px] text-[#f2efe8] md:hidden">A</span>
+                <span className="font-mono-num mr-2 inline-block rounded bg-black/75 px-2 py-0.5 text-[10px] tracking-wider text-[#f2efe8] md:hidden">传统拍摄</span>
                 {r.traditional}
               </div>
-              <div className="border-b border-black/10 border-l-0 px-5 py-4 text-sm font-medium leading-relaxed md:border-l">
-                <span className="font-mono-num mr-2 rounded bg-[#55624a] px-1.5 py-0.5 text-[9px] text-[#f2efe8] md:hidden">B</span>
+              <div className="border-b border-black/10 border-l-0 bg-[#55624a]/[0.07] px-5 py-4 text-sm font-medium leading-relaxed md:border-l md:bg-transparent">
+                <span className="font-mono-num mr-2 inline-block rounded bg-[#55624a] px-2 py-0.5 text-[10px] tracking-wider text-[#f2efe8] md:hidden">AI 工作流</span>
                 {r.ai}
               </div>
             </div>
