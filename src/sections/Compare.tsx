@@ -3,20 +3,20 @@ import { ArrowRight } from 'lucide-react'
 
 const pairs = [
   {
-    before: { src: 'images/cloth-jacket.jpg', alt: '平拍的米色拉链夹克样衣', label: 'INPUT · 手机平拍样衣' },
-    after: { src: 'images/hero-main.jpg', alt: 'AI 生成的仰拍双人大片，模特身着同款夹克', label: 'OUTPUT · AI 上身成片' },
+    before: { src: 'images/cloth-jacket.webp', alt: '平拍的米色拉链夹克样衣', label: 'INPUT · 手机平拍样衣' },
+    after: { src: 'images/hero-main.webp', alt: 'AI 生成的仰拍双人大片，模特身着同款夹克', label: 'OUTPUT · AI 上身成片' },
     name: '米色拉链夹克',
     desc: '平铺状态 → 仰拍蓝天双人大片，拉链与版型完整还原',
   },
   {
-    before: { src: 'images/cloth-pants.jpg', alt: '平拍的卡其色阔腿裤样衣', label: 'INPUT · 手机平拍样衣' },
-    after: { src: 'images/look-03.jpg', alt: 'AI 生成的草地双人大片，男模身着同款阔腿裤', label: 'OUTPUT · AI 上身成片' },
+    before: { src: 'images/cloth-pants.webp', alt: '平拍的卡其色阔腿裤样衣', label: 'INPUT · 手机平拍样衣' },
+    after: { src: 'images/look-03.webp', alt: 'AI 生成的草地双人大片，男模身着同款阔腿裤', label: 'OUTPUT · AI 上身成片' },
     name: '卡其阔腿裤',
     desc: '地板平拍 → 草地毯上双人 look，抽绳与褶裥细节保留',
   },
   {
-    before: { src: 'images/cloth-4.jpg', alt: '平拍的白色印花 T 恤样衣', label: 'INPUT · 手机平拍样衣' },
-    after: { src: 'images/look-05.jpg', alt: 'AI 生成的人像成片，模特身着同款白 Tee', label: 'OUTPUT · AI 上身成片' },
+    before: { src: 'images/cloth-4.webp', alt: '平拍的白色印花 T 恤样衣', label: 'INPUT · 手机平拍样衣' },
+    after: { src: 'images/look-05.webp', alt: 'AI 生成的人像成片，模特身着同款白 Tee', label: 'OUTPUT · AI 上身成片' },
     name: '印花白 Tee',
     desc: '白 Tee 作为内搭配上外衫，领口与下摆层次自然贴合',
   },
@@ -57,7 +57,7 @@ export default function Compare() {
                 <ArrowRight className="h-6 w-6 rotate-90 text-black/70 md:hidden" strokeWidth={1.5} />
               </div>
 
-              <figure className="overflow-hidden border border-black/15 bg-black">
+              <figure className="overflow-hidden border border-black/15 bg-[#ded9cd]">
                 <img src={p.after.src} alt={p.after.alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
                 <figcaption className="border-t border-white/10 px-4 py-2.5 font-mono-num text-[10px] tracking-[0.25em] text-[#f2efe8]/70">
                   {p.after.label}

@@ -4,7 +4,7 @@ export default function Hero() {
       {/* background */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="images/hero-main.jpg"
+          src="images/hero-main.webp"
           alt="MAZZONNE AI 生成双人时尚大片"
           className="animate-hero-zoom h-full w-full object-cover object-center opacity-90"
         />

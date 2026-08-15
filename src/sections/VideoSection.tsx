@@ -21,7 +21,7 @@ export default function VideoSection() {
               <video
                 className="max-h-[75vh] w-full max-w-[420px] bg-black object-contain"
                 src="video/final-video.mp4"
-                poster="video/video-poster.jpg"
+                poster="video/video-poster.webp"
                 controls
                 playsInline
                 preload="metadata"

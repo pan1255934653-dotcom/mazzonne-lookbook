@@ -24,10 +24,10 @@ const steps: Step[] = [
       { k: '门槛极低', v: '一部手机 + 一块地板即可，打样阶段的衣服也能直接开拍' },
     ],
     images: [
-      { src: 'images/cloth-pants.jpg', alt: '手机平拍的卡其色阔腿裤样衣', caption: '卡其阔腿裤 · 平拍' },
-      { src: 'images/cloth-jacket.jpg', alt: '手机平拍的米色拉链夹克样衣', caption: '拉链夹克 · 平拍' },
-      { src: 'images/cloth-3.jpg', alt: '手机平拍的铆钉牛仔裤样衣', caption: '铆钉牛仔裤 · 平拍' },
-      { src: 'images/cloth-4.jpg', alt: '手机平拍的白色印花 T 恤样衣', caption: '印花白 Tee · 平拍' },
+      { src: 'images/cloth-pants.webp', alt: '手机平拍的卡其色阔腿裤样衣', caption: '卡其阔腿裤 · 平拍' },
+      { src: 'images/cloth-jacket.webp', alt: '手机平拍的米色拉链夹克样衣', caption: '拉链夹克 · 平拍' },
+      { src: 'images/cloth-3.webp', alt: '手机平拍的铆钉牛仔裤样衣', caption: '铆钉牛仔裤 · 平拍' },
+      { src: 'images/cloth-4.webp', alt: '手机平拍的白色印花 T 恤样衣', caption: '印花白 Tee · 平拍' },
     ],
   },
   {
@@ -42,9 +42,9 @@ const steps: Step[] = [
       { k: '零差旅勘景', v: '等于把"去新疆勘景"压缩成一次素材收集，成本几乎为零' },
     ],
     images: [
-      { src: 'images/scene-1.jpg', alt: '伊犁草原取景参考：云杉林与草场', caption: '参考 · 云杉林草场' },
-      { src: 'images/scene-2.jpg', alt: '阿勒泰草原取景参考', caption: '参考 · 阿勒泰' },
-      { src: 'images/scene-3.jpg', alt: '伊犁夏日草原取景参考', caption: '参考 · 伊犁之夏' },
+      { src: 'images/scene-1.webp', alt: '伊犁草原取景参考：云杉林与草场', caption: '参考 · 云杉林草场' },
+      { src: 'images/scene-2.webp', alt: '阿勒泰草原取景参考', caption: '参考 · 阿勒泰' },
+      { src: 'images/scene-3.webp', alt: '伊犁夏日草原取景参考', caption: '参考 · 伊犁之夏' },
     ],
   },
   {
@@ -59,10 +59,10 @@ const steps: Step[] = [
       { k: '批量产出再选片', v: '一次生成多组构图，像摄影师选片一样挑出最佳底图进入精修环节' },
     ],
     images: [
-      { src: 'images/mj-process.jpg', alt: 'Midjourney 创作后台：moodboard 与摄影参数 prompt', caption: 'Midjourney 后台 · moodboard + 参数化 prompt', wide: true },
-      { src: 'images/mj-out-1.jpg', alt: 'Midjourney 生成的草原人像底图', caption: '底图 · 木椅人像' },
-      { src: 'images/mj-out-2.jpg', alt: 'Midjourney 生成的草原双人底图', caption: '底图 · 双人大片' },
-      { src: 'images/mj-out-3.jpg', alt: 'Midjourney 生成的细节特写底图', caption: '底图 · 细节特写' },
+      { src: 'images/mj-process.webp', alt: 'Midjourney 创作后台：moodboard 与摄影参数 prompt', caption: 'Midjourney 后台 · moodboard + 参数化 prompt', wide: true },
+      { src: 'images/mj-out-1.webp', alt: 'Midjourney 生成的草原人像底图', caption: '底图 · 木椅人像' },
+      { src: 'images/mj-out-2.webp', alt: 'Midjourney 生成的草原双人底图', caption: '底图 · 双人大片' },
+      { src: 'images/mj-out-3.webp', alt: 'Midjourney 生成的细节特写底图', caption: '底图 · 细节特写' },
     ],
   },
   {
@@ -78,10 +78,10 @@ const steps: Step[] = [
       { k: '画幅扩展', v: '3:4 竖图 outpainting 成 16:9 横幅，直接适配视频与电商横幅物料' },
     ],
     images: [
-      { src: 'images/edit-model-swap.jpg', alt: '替换模特但保持服装不变的精修成片', caption: '精修 · 替换模特保持服装' },
-      { src: 'images/edit-hand-fix.jpg', alt: '手部细节定点修复的成片', caption: '精修 · 手部修正' },
-      { src: 'images/edit-collar-fix.jpg', alt: '外套领口结构修正的成片', caption: '精修 · 领口修正' },
-      { src: 'images/wide-extend.jpg', alt: '3:4 扩展为 16:9 的横幅成片', caption: '精修 · 16:9 画幅扩展', wide: true },
+      { src: 'images/edit-model-swap.webp', alt: '替换模特但保持服装不变的精修成片', caption: '精修 · 替换模特保持服装' },
+      { src: 'images/edit-hand-fix.webp', alt: '手部细节定点修复的成片', caption: '精修 · 手部修正' },
+      { src: 'images/edit-collar-fix.webp', alt: '外套领口结构修正的成片', caption: '精修 · 领口修正' },
+      { src: 'images/wide-extend.webp', alt: '3:4 扩展为 16:9 的横幅成片', caption: '精修 · 16:9 画幅扩展', wide: true },
     ],
   },
   {
@@ -96,8 +96,8 @@ const steps: Step[] = [
       { k: '可复用', v: '下一季只需替换第 01 步的单品库，整条流水线原样复跑' },
     ],
     images: [
-      { src: 'images/look-01.jpg', alt: '草地鹦鹉肖像成片', caption: '成片 · 肖像' },
-      { src: 'video/video-poster.jpg', alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
+      { src: 'images/look-01.webp', alt: '草地鹦鹉肖像成片', caption: '成片 · 肖像' },
+      { src: 'video/video-poster.webp', alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
     ],
     note: '完整成片见下方「成片画廊」与「成片视频」。',
   },
@@ -138,7 +138,7 @@ export default function Workflow() {
 
                   {/* tech points */}
                   <Reveal delay={140}>
-                    <ul className="mt-8 grid gap-px overflow-hidden border border-black/15 bg-black/15 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="mt-8 grid gap-px overflow-hidden border border-black/15 bg-[#ded9cd]/15 sm:grid-cols-2 lg:grid-cols-3">
                       {s.points.map((p) => (
                         <li key={p.k} className="bg-[#f2efe8] px-5 py-4">
                           <div className="text-[13px] font-bold tracking-wide">{p.k}</div>
@@ -163,7 +163,7 @@ export default function Workflow() {
                         <>
                           {wide.map((im, wi) => (
                             <Reveal key={im.src} delay={200 + wi * 80}>
-                              <figure className="mb-5 overflow-hidden border border-black/15 bg-black">
+                              <figure className="mb-5 overflow-hidden border border-black/15 bg-[#ded9cd]">
                                 <img src={im.src} alt={im.alt} loading="lazy" className="w-full object-cover transition-transform duration-700 hover:scale-[1.02]" />
                                 {im.caption && (
                                   <figcaption className="bg-black px-4 py-2.5 font-mono-num text-[11px] tracking-widest text-[#f2efe8]/75">
@@ -176,7 +176,7 @@ export default function Workflow() {
                           <div className={`grid gap-5 ${cols}`}>
                             {normal.map((im, ii) => (
                               <Reveal key={im.src} delay={200 + ii * 80}>
-                                <figure className="overflow-hidden border border-black/15 bg-black">
+                                <figure className="overflow-hidden border border-black/15 bg-[#ded9cd]">
                                   <img
                                     src={im.src}
                                     alt={im.alt}

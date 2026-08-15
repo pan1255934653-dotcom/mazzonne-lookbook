@@ -1,18 +1,18 @@
 import Reveal from '@/components/Reveal'
 
 const looks = [
-  { src: 'images/look-01.jpg', alt: '草地上的双人鹦鹉肖像', title: '草地鹦鹉 · 双人肖像', meta: 'AI 换装 / 珍珠配饰' },
-  { src: 'images/look-02.jpg', alt: '身着卫衣网格裙的女性肖像', title: '字母卫衣 × 网格裙', meta: 'AI 换装 / 配饰叠加' },
-  { src: 'images/look-03.jpg', alt: '草地白毯上的双人 look', title: '白毯双人 · 男生换装', meta: '整套换装 / 道具场景' },
-  { src: 'images/hero-main.jpg', alt: '仰拍蓝天双人时尚大片', title: '仰拍双人 · 蓝天构图', meta: '低机位 / 85mm 压缩' },
-  { src: 'images/look-04.jpg', alt: '灰色卫衣网格裙肖像', title: '灰卫衣 × 网格裙', meta: 'AI 换装 / 草地场景' },
-  { src: 'images/look-05.jpg', alt: '白色内搭肖像', title: '白色内搭 · 特写', meta: '印花对齐 / 浅景深' },
-  { src: 'images/look-06.jpg', alt: '裙装调整版草地人像', title: '裙装调整 · 草地人像', meta: '版型迭代 / 影调统一' },
-  { src: 'images/look-07.jpg', alt: '白色运动鞋肖像', title: '白鞋换装 · 肖像', meta: '鞋履换装' },
-  { src: 'images/look-08.jpg', alt: 'AI 生成时尚成片', title: '草原系列 · Look 08', meta: 'Midjourney + Lovart' },
-  { src: 'images/look-09.jpg', alt: 'AI 生成时尚成片', title: '草原系列 · Look 09', meta: 'Midjourney + Lovart' },
-  { src: 'images/look-10.jpg', alt: 'AI 生成时尚成片', title: '草原系列 · Look 10', meta: 'Midjourney + Lovart' },
-  { src: 'images/look-11.jpg', alt: 'AI 生成时尚成片', title: '草原系列 · Look 11', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-01.webp', alt: '草地上的双人鹦鹉肖像', title: '草地鹦鹉 · 双人肖像', meta: 'AI 换装 / 珍珠配饰' },
+  { src: 'images/look-02.webp', alt: '身着卫衣网格裙的女性肖像', title: '字母卫衣 × 网格裙', meta: 'AI 换装 / 配饰叠加' },
+  { src: 'images/look-03.webp', alt: '草地白毯上的双人 look', title: '白毯双人 · 男生换装', meta: '整套换装 / 道具场景' },
+  { src: 'images/hero-main.webp', alt: '仰拍蓝天双人时尚大片', title: '仰拍双人 · 蓝天构图', meta: '低机位 / 85mm 压缩' },
+  { src: 'images/look-04.webp', alt: '灰色卫衣网格裙肖像', title: '灰卫衣 × 网格裙', meta: 'AI 换装 / 草地场景' },
+  { src: 'images/look-05.webp', alt: '白色内搭肖像', title: '白色内搭 · 特写', meta: '印花对齐 / 浅景深' },
+  { src: 'images/look-06.webp', alt: '裙装调整版草地人像', title: '裙装调整 · 草地人像', meta: '版型迭代 / 影调统一' },
+  { src: 'images/look-07.webp', alt: '白色运动鞋肖像', title: '白鞋换装 · 肖像', meta: '鞋履换装' },
+  { src: 'images/look-08.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 08', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-09.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 09', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-10.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 10', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-11.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 11', meta: 'Midjourney + Lovart' },
 ]
 
 export default function Gallery() {
@@ -34,7 +34,7 @@ export default function Gallery() {
       <div className="mt-14 columns-2 gap-3 md:gap-5 lg:columns-3 [&>figure]:mb-3 md:[&>figure]:mb-5">
         {looks.map((l, i) => (
           <Reveal key={l.src + i} as="figure" delay={(i % 3) * 80} className="break-inside-avoid">
-            <div className="group relative overflow-hidden border border-black/10 bg-black">
+            <div className="group relative overflow-hidden border border-black/10 bg-[#ded9cd]">
               <img
                 src={l.src}
                 alt={l.alt}
