@@ -31,7 +31,7 @@ export default function Gallery() {
         </div>
       </Reveal>
 
-      <div className="mt-14 columns-2 gap-5 lg:columns-3 [&>figure]:mb-5">
+      <div className="mt-14 columns-2 gap-3 md:gap-5 lg:columns-3 [&>figure]:mb-3 md:[&>figure]:mb-5">
         {looks.map((l, i) => (
           <Reveal key={l.src + i} as="figure" delay={(i % 3) * 80} className="break-inside-avoid">
             <div className="group relative overflow-hidden border border-black/10 bg-black">
@@ -41,9 +41,9 @@ export default function Gallery() {
                 loading="lazy"
                 className="w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
-              <div className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-black/80 to-transparent px-4 pb-3 pt-10 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="font-serif-sc text-sm font-bold text-[#f2efe8]">{l.title}</div>
-                <div className="font-mono-num mt-0.5 text-[10px] tracking-[0.2em] text-[#f2efe8]/60">{l.meta}</div>
+              <div className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-black/80 to-transparent px-4 pb-3 pt-10 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 max-md:translate-y-0 max-md:opacity-100 max-md:px-3 max-md:pb-2 max-md:pt-6">
+                <div className="font-serif-sc text-sm font-bold text-[#f2efe8] max-md:text-[12px]">{l.title}</div>
+                <div className="font-mono-num mt-0.5 text-[10px] tracking-[0.2em] text-[#f2efe8]/60 max-md:text-[9px]">{l.meta}</div>
               </div>
             </div>
           </Reveal>

@@ -97,7 +97,7 @@ const steps: Step[] = [
     ],
     images: [
       { src: 'images/look-01.jpg', alt: '草地鹦鹉肖像成片', caption: '成片 · 肖像' },
-      { src: 'images/video-poster.jpg', alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
+      { src: 'video/video-poster.jpg', alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
     ],
     note: '完整成片见下方「成片画廊」与「成片视频」。',
   },
@@ -125,7 +125,7 @@ export default function Workflow() {
                 {/* number */}
                 <Reveal>
                   <div className="font-mono-num text-5xl font-medium text-black/25 md:text-7xl">{s.no}</div>
-                  <div className={`mt-4 inline-block px-3 py-1.5 text-[11px] tracking-wider ${s.toolClass}`}>
+                  <div className={`mt-4 inline-block px-3 py-1.5 text-[11px] leading-snug tracking-wider ${s.toolClass}`}>
                     {s.tool}
                   </div>
                 </Reveal>

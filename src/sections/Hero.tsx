@@ -14,19 +14,19 @@ export default function Hero() {
 
       {/* content */}
       <div className="relative z-10 flex h-full flex-col justify-between px-5 pb-10 pt-24 text-[#f2efe8] md:px-10">
-        <div className="animate-fade-up flex items-center gap-4" style={{ animationDelay: '200ms' }}>
-          <span className="h-px w-12 bg-[#f2efe8]/60" />
-          <p className="font-mono-num text-[11px] uppercase tracking-[0.35em] text-[#f2efe8]/80">
+        <div className="animate-fade-up flex items-center gap-3 md:gap-4" style={{ animationDelay: '200ms' }}>
+          <span className="h-px w-8 shrink-0 bg-[#f2efe8]/60 md:w-12" />
+          <p className="font-mono-num text-[10px] uppercase tracking-[0.18em] text-[#f2efe8]/80 md:text-[11px] md:tracking-[0.35em]">
             Mazzonne · AI Lookbook Workflow · 工作流全解析
           </p>
         </div>
 
         <div>
-          <h1 className="font-serif-sc font-black leading-[1.06] [text-shadow:0_2px_30px_rgba(0,0,0,0.55)]">
-            <span className="animate-fade-up block text-[9.5vw] md:text-[6.2vw]" style={{ animationDelay: '350ms' }}>
+          <h1 className="font-serif-sc font-black leading-[1.12] [text-shadow:0_2px_30px_rgba(0,0,0,0.55)] md:leading-[1.06]">
+            <span className="animate-fade-up block text-[11vw] md:text-[6.2vw]" style={{ animationDelay: '350ms' }}>
               从一件平拍样衣，
             </span>
-            <span className="animate-fade-up block text-[9.5vw] md:text-[6.2vw]" style={{ animationDelay: '550ms' }}>
+            <span className="animate-fade-up block text-[11vw] md:text-[6.2vw]" style={{ animationDelay: '550ms' }}>
               到一场草原大片。
             </span>
           </h1>

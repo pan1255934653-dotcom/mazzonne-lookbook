@@ -29,11 +29,11 @@ export default function Overview() {
           {/* head */}
           <div className="grid grid-cols-[1fr] md:grid-cols-[180px_1fr_1fr]">
             <div className="hidden border-b border-black/15 bg-black px-5 py-4 md:block" />
-            <div className="border-b border-black/15 bg-black px-5 py-4 text-[#f2efe8]">
+            <div className="hidden border-b border-black/15 bg-black px-5 py-4 text-[#f2efe8] md:block">
               <span className="font-mono-num text-[10px] uppercase tracking-[0.3em] text-[#f2efe8]/60">A</span>
               <span className="ml-3 font-serif-sc text-lg font-bold">传统外景拍摄</span>
             </div>
-            <div className="border-b border-black/15 bg-[#55624a] px-5 py-4 text-[#f2efe8]">
+            <div className="hidden border-b border-black/15 bg-[#55624a] px-5 py-4 text-[#f2efe8] md:block">
               <span className="font-mono-num text-[10px] uppercase tracking-[0.3em] text-[#f2efe8]/60">B</span>
               <span className="ml-3 font-serif-sc text-lg font-bold">MAZZONNE AI 工作流</span>
             </div>
@@ -45,9 +45,11 @@ export default function Overview() {
                 {r.item}
               </div>
               <div className="border-b border-black/10 px-5 py-4 text-sm leading-relaxed text-black/55">
+                <span className="font-mono-num mr-2 rounded bg-black/80 px-1.5 py-0.5 text-[9px] text-[#f2efe8] md:hidden">A</span>
                 {r.traditional}
               </div>
               <div className="border-b border-black/10 border-l-0 px-5 py-4 text-sm font-medium leading-relaxed md:border-l">
+                <span className="font-mono-num mr-2 rounded bg-[#55624a] px-1.5 py-0.5 text-[9px] text-[#f2efe8] md:hidden">B</span>
                 {r.ai}
               </div>
             </div>

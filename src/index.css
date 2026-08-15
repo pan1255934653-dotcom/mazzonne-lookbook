@@ -84,6 +84,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -91,6 +92,7 @@ body {
   color: var(--ink);
   font-family: 'Inter', 'PingFang SC', 'Noto Sans SC', sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .font-serif-sc {

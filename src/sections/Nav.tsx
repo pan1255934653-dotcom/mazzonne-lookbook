@@ -47,7 +47,7 @@ export default function Nav() {
         </nav>
         <a
           href="#gallery"
-          className="border border-black/80 px-4 py-1.5 text-[12px] tracking-widest transition-colors hover:bg-black hover:text-[#f2efe8]"
+          className="border border-black/80 px-3 py-1 text-[11px] tracking-widest transition-colors hover:bg-black hover:text-[#f2efe8] md:px-4 md:py-1.5 md:text-[12px]"
         >
           看成片
         </a>
