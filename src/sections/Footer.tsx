@@ -22,7 +22,7 @@ export default function Footer() {
             <div>
               <div className="font-serif-sc text-2xl font-black tracking-[0.15em]">MAZZONNE</div>
               <p className="mt-4 max-w-sm text-[13px] leading-relaxed text-[#f2efe8]/55">
-                一条可复用的 AI Lookbook 生产流水线：真实样衣进，时尚大片出。
+                一条设计团队主导的 AI Lookbook 生产流水线：真实样衣进，时尚大片出。
                 下一季只需替换单品库，流程原样复跑。
               </p>
             </div>

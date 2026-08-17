@@ -34,8 +34,9 @@ export default function Hero() {
             className="animate-fade-up mt-6 max-w-xl text-sm leading-relaxed text-[#f2efe8]/85 md:text-base"
             style={{ animationDelay: '750ms' }}
           >
-            没有摄影棚、没有模特、没有去新疆的机票——只有一部手机、一组 AI 工具，
-            和一条可以无限复用的工作流。这是 MAZZONNE 整本 Lookbook 从 0 到 1 的完整过程。
+            没有摄影棚、没有模特、没有去新疆的机票——但这不是"一键生成"的取巧。
+            每一张成片背后，是设计团队主导的美术企划、参数化生成的技术管线，和像素级的精修把控。
+            这是 MAZZONNE 整本 Lookbook 从 0 到 1 的完整过程。
           </p>
 
           {/* stats */}
@@ -44,8 +45,8 @@ export default function Hero() {
             style={{ animationDelay: '950ms' }}
           >
             {[
-              { num: '05', label: '个环节 · 全流程AI驱动' },
-              { num: '15+', label: '张精选成片 · 本页展示' },
+              { num: '05', label: '个环节 · 标准化技术管线' },
+              { num: '40', label: '张成片 · 画廊全收录' },
               { num: '01', label: '部成片视频 · 静帧转动图' },
               { num: '0', label: '次实拍 · 无棚无差旅' },
             ].map((s) => (

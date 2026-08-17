@@ -1,7 +1,7 @@
 import Reveal from '@/components/Reveal'
 
 const rows = [
-  { item: '团队配置', traditional: '摄影师 / 模特 / 妆造 / 灯光 / 制片，5–10 人团队', ai: '1 名操作人员 + AI 工具链' },
+  { item: '团队配置', traditional: '摄影师 / 模特 / 妆造 / 灯光 / 制片，5–10 人团队', ai: '设计团队主导 + AI 工具链执行，企划 / 生成 / 精修分工' },
   { item: '场地与差旅', traditional: '外景地勘景、机酒差旅、场地协调（如新疆草原）', ai: '网络取景参考 + AI 场景生成，零差旅' },
   { item: '制作周期', traditional: '企划 → 拍摄 → 选片 → 修图，以「周」为单位', ai: '拍摄样衣 → 生成 → 精修，以「小时」为单位' },
   { item: '修改成本', traditional: '重拍 = 重新约模特、约场地、再等档期', ai: '局部修复 / 换装 / 换模特，分钟级迭代' },
@@ -20,7 +20,7 @@ export default function Overview() {
         </h2>
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-black/65 md:text-base">
           传统外景 Lookbook 的本质是「组织一场拍摄」；我们的做法是把拍摄拆解成数据流：
-          真实样衣是输入，AI 是相机与影棚，画布是修图台。下面这张表是两种方式的正面对比。
+          真实样衣是输入，AI 是相机与影棚，设计团队是导演。下面这张表是两种方式的正面对比。
         </p>
       </Reveal>
 

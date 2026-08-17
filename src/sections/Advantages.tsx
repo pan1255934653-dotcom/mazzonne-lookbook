@@ -1,18 +1,18 @@
 import Reveal from '@/components/Reveal'
-import { Banknote, Timer, SlidersHorizontal, Layers, Shirt, Clapperboard } from 'lucide-react'
+import { PenTool, Timer, SlidersHorizontal, Layers, Shirt, Clapperboard } from 'lucide-react'
 
 const items = [
   {
-    icon: Banknote,
-    title: '成本结构被重写',
-    body: '没有模特费、场地费、器材租赁与机酒差旅。主要支出是 AI 工具订阅——多生产一张成片的边际成本趋近于零。',
-    tag: 'COST',
+    icon: PenTool,
+    title: '设计主导，AI 执行',
+    body: '企划、影调、构图、选片全部由设计团队决策。AI 是执行层，审美与判断始终在人手里——这是成片"像大牌"而不是"像 AI"的原因。',
+    tag: 'DESIGN',
   },
   {
-    icon: Timer,
-    title: '周期从周到小时',
-    body: '传统外景 lookbook 以「周」排期；这条流水线从平拍到定稿以「小时」计。客户改需求，当天就能出新图。',
-    tag: 'SPEED',
+    icon: Shirt,
+    title: '服装还原不走样',
+    body: 'AI 换装以真实样衣为准：版型、印花位置、铆钉与抽绳细节逐点对齐。展示的就是消费者买到的那件衣服。',
+    tag: 'FIDELITY',
   },
   {
     icon: SlidersHorizontal,
@@ -21,16 +21,16 @@ const items = [
     tag: 'CONTROL',
   },
   {
-    icon: Shirt,
-    title: '服装还原不走样',
-    body: 'AI 换装以真实样衣为准：版型、印花位置、铆钉与抽绳细节逐一对齐。展示的就是消费者买到的那件衣服。',
-    tag: 'FIDELITY',
-  },
-  {
     icon: Layers,
     title: '整本视觉统一',
     body: 'Moodboard 贯穿生成与精修全流程，几十张成片共享同一套影调与色彩科学，像同一位摄影师同一天拍的。',
     tag: 'CONSISTENCY',
+  },
+  {
+    icon: Timer,
+    title: '周期从周到小时',
+    body: '传统外景 lookbook 以「周」排期；这条流水线从平拍到定稿以「小时」计。改需求当天出新图，多一张成片的边际成本趋近于零。',
+    tag: 'SPEED',
   },
   {
     icon: Clapperboard,
@@ -46,7 +46,11 @@ export default function Advantages() {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Reveal>
           <p className="font-mono-num text-[11px] uppercase tracking-[0.35em] text-[#f2efe8]/50">04 — Advantages</p>
-          <h2 className="font-serif-sc mt-4 text-3xl font-black leading-snug md:text-5xl">为什么是这条工作流。</h2>
+          <h2 className="font-serif-sc mt-4 text-3xl font-black leading-snug md:text-5xl">AI 是引擎，设计是方向盘。</h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-[#f2efe8]/65 md:text-base">
+            工具人人都能订阅，稳定的出品能力买不到。
+            这条工作流的护城河，是技术管线与设计判断的咬合。
+          </p>
         </Reveal>
 
         <div className="mt-14 grid gap-px overflow-hidden border border-[#f2efe8]/15 bg-[#f2efe8]/15 sm:grid-cols-2 lg:grid-cols-3">

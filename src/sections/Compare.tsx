@@ -34,7 +34,7 @@ export default function Compare() {
         </h2>
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-black/65 md:text-base">
           每一组都是同一件衣服：左边是流程起点（手机平拍），右边是流程终点（AI 上身成片）。
-          中间隔着的，就是这条工作流的全部价值。
+          中间隔着的不是运气——是一条毫米级对齐的技术管线，和设计团队对版型、光影与构图的判断。
         </p>
       </Reveal>
 
