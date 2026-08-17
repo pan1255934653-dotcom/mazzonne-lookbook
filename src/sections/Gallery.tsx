@@ -1,18 +1,18 @@
 import Reveal from '@/components/Reveal'
 
 const looks = [
-  { src: 'images/look-01.webp', alt: '草地上的双人鹦鹉肖像', title: '草地鹦鹉 · 双人肖像', meta: 'AI 换装 / 珍珠配饰' },
-  { src: 'images/look-02.webp', alt: '身着卫衣网格裙的女性肖像', title: '字母卫衣 × 网格裙', meta: 'AI 换装 / 配饰叠加' },
-  { src: 'images/look-03.webp', alt: '草地白毯上的双人 look', title: '白毯双人 · 男生换装', meta: '整套换装 / 道具场景' },
-  { src: 'images/hero-main.webp', alt: '仰拍蓝天双人时尚大片', title: '仰拍双人 · 蓝天构图', meta: '低机位 / 85mm 压缩' },
-  { src: 'images/look-04.webp', alt: '灰色卫衣网格裙肖像', title: '灰卫衣 × 网格裙', meta: 'AI 换装 / 草地场景' },
-  { src: 'images/look-05.webp', alt: '白色内搭肖像', title: '白色内搭 · 特写', meta: '印花对齐 / 浅景深' },
-  { src: 'images/look-06.webp', alt: '裙装调整版草地人像', title: '裙装调整 · 草地人像', meta: '版型迭代 / 影调统一' },
-  { src: 'images/look-07.webp', alt: '白色运动鞋肖像', title: '白鞋换装 · 肖像', meta: '鞋履换装' },
-  { src: 'images/look-08.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 08', meta: 'Midjourney + Lovart' },
-  { src: 'images/look-09.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 09', meta: 'Midjourney + Lovart' },
-  { src: 'images/look-10.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 10', meta: 'Midjourney + Lovart' },
-  { src: 'images/look-11.webp', alt: 'AI 生成时尚成片', title: '草原系列 · Look 11', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-01.webp', alt: '草地上的鹦鹉肖像', title: '草地鹦鹉 · 肖像', meta: 'AI 换装 / 珍珠配饰' },
+  { src: 'images/look-02.webp', alt: '身着卫衣波点裙的女性全身像', title: '字母卫衣 × 波点裙', meta: 'AI 换装 / 全身 Look' },
+  { src: 'images/look-04.webp', alt: '灰色卫衣波点裙肖像', title: '灰卫衣 × 波点裙', meta: 'AI 换装 / 草地场景' },
+  { src: 'images/look-08.webp', alt: '俯拍草地上的工装裤 look', title: '俯拍草地 · 工装裤', meta: '俯拍构图 / 白鞋搭配' },
+  { src: 'images/look-10.webp', alt: '草地躺姿一字肩 look', title: '草地躺姿 · 一字肩', meta: '一字肩上衣 / 军绿工装' },
+  { src: 'images/look-11.webp', alt: '坐姿鹦鹉肖像', title: '坐姿鹦鹉 · 肖像', meta: '一字肩上衣 / 珍珠配饰' },
+  { src: 'images/look-12.webp', alt: '木椅上的卫衣波点裙坐姿', title: '木椅坐姿 · 卫衣波点裙', meta: '系列影调统一' },
+  { src: 'images/look-13.webp', alt: '草地蹲姿白上衣 look', title: '草地蹲姿 · 白上衣', meta: '自然光 / 浅景深' },
+  { src: 'images/look-14.webp', alt: '草地珍珠项链特写', title: '草地特写 · 珍珠项链', meta: '配饰特写 / 肤质还原' },
+  { src: 'images/look-15.webp', alt: '岩石旁的一字肩特写', title: '岩石特写 · 一字肩', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-16.webp', alt: '悬崖边躺卧的工装裤 look', title: '悬崖躺卧 · 工装裤', meta: 'Midjourney + Lovart' },
+  { src: 'images/look-17.webp', alt: '旷野中的卫衣长裙全身像', title: '旷野全身 · 卫衣长裙', meta: '全身构图 / 远景叙事' },
 ]
 
 export default function Gallery() {

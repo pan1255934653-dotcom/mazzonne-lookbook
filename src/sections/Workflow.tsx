@@ -24,10 +24,10 @@ const steps: Step[] = [
       { k: '门槛极低', v: '一部手机 + 一块地板即可，打样阶段的衣服也能直接开拍' },
     ],
     images: [
-      { src: 'images/cloth-pants.webp', alt: '手机平拍的卡其色阔腿裤样衣', caption: '卡其阔腿裤 · 平拍' },
-      { src: 'images/cloth-jacket.webp', alt: '手机平拍的米色拉链夹克样衣', caption: '拉链夹克 · 平拍' },
-      { src: 'images/cloth-3.webp', alt: '手机平拍的铆钉牛仔裤样衣', caption: '铆钉牛仔裤 · 平拍' },
-      { src: 'images/cloth-4.webp', alt: '手机平拍的白色印花 T 恤样衣', caption: '印花白 Tee · 平拍' },
+      { src: 'images/cloth-offshoulder.webp', alt: '手机平拍的白色一字肩上衣样衣', caption: '一字肩上衣 · 平拍' },
+      { src: 'images/cloth-dress.webp', alt: '手机平拍的波点吊带裙样衣', caption: '波点吊带裙 · 平拍' },
+      { src: 'images/cloth-cargo.webp', alt: '手机平拍的军绿工装裤样衣', caption: '军绿工装裤 · 平拍' },
+      { src: 'images/cloth-sneakers.webp', alt: '手机平拍的白色运动鞋', caption: '白色运动鞋 · 平拍' },
     ],
   },
   {
@@ -61,7 +61,7 @@ const steps: Step[] = [
     images: [
       { src: 'images/mj-process.webp', alt: 'Midjourney 创作后台：moodboard 与摄影参数 prompt', caption: 'Midjourney 后台 · moodboard + 参数化 prompt', wide: true },
       { src: 'images/mj-out-1.webp', alt: 'Midjourney 生成的草原人像底图', caption: '底图 · 木椅人像' },
-      { src: 'images/mj-out-2.webp', alt: 'Midjourney 生成的草原双人底图', caption: '底图 · 双人大片' },
+      { src: 'images/mj-out-2.webp', alt: 'Midjourney 生成的鹦鹉肖像底图', caption: '底图 · 鹦鹉肖像' },
       { src: 'images/mj-out-3.webp', alt: 'Midjourney 生成的细节特写底图', caption: '底图 · 细节特写' },
     ],
   },
@@ -80,7 +80,7 @@ const steps: Step[] = [
     images: [
       { src: 'images/edit-model-swap.webp', alt: '替换模特但保持服装不变的精修成片', caption: '精修 · 替换模特保持服装' },
       { src: 'images/edit-hand-fix.webp', alt: '手部细节定点修复的成片', caption: '精修 · 手部修正' },
-      { src: 'images/edit-collar-fix.webp', alt: '外套领口结构修正的成片', caption: '精修 · 领口修正' },
+      { src: 'images/look-06.webp', alt: '裙装版型调整后的草地人像成片', caption: '精修 · 裙装版型调整' },
       { src: 'images/wide-extend.webp', alt: '3:4 扩展为 16:9 的横幅成片', caption: '精修 · 16:9 画幅扩展', wide: true },
     ],
   },
@@ -96,7 +96,7 @@ const steps: Step[] = [
       { k: '可复用', v: '下一季只需替换第 01 步的单品库，整条流水线原样复跑' },
     ],
     images: [
-      { src: 'images/look-01.webp', alt: '草地鹦鹉肖像成片', caption: '成片 · 肖像' },
+      { src: 'images/look-10.webp', alt: '草地躺姿成片', caption: '成片 · 草地肖像' },
       { src: 'video/video-poster.webp', alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
     ],
     note: '完整成片见下方「成片画廊」与「成片视频」。',

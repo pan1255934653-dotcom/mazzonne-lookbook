@@ -4,8 +4,8 @@ export default function Hero() {
       {/* background */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="images/hero-main.webp"
-          alt="MAZZONNE AI 生成双人时尚大片"
+          src="images/look-01.webp"
+          alt="MAZZONNE AI 生成草地鹦鹉肖像大片"
           className="animate-hero-zoom h-full w-full object-cover object-center opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black/70" />
