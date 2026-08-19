@@ -29,22 +29,28 @@ export function useReveal<T extends HTMLElement = HTMLDivElement>() {
           }
         })
       },
-      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+      { threshold: 0.05, rootMargin: '0px 0px 10% 0px' }
     )
     targets.forEach((t) => io.observe(t))
 
-    // Safety net: if IO misfires, anything near the viewport still appears.
-    // Elements far below the fold keep their scroll-in animation.
+    // Safety net 1: anything near the viewport appears even if IO misfires.
     const fallback = window.setTimeout(() => {
       const limit = window.innerHeight * 1.5
       targets.forEach((t) => {
         if (t.getBoundingClientRect().top < limit) t.classList.add('is-visible')
       })
-    }, 3000)
+    }, 2500)
+
+    // Safety net 2: after 6s, reveal everything unconditionally — content
+    // visibility must never depend on IO behaving perfectly (mobile Safari).
+    const hardFallback = window.setTimeout(() => {
+      targets.forEach((t) => t.classList.add('is-visible'))
+    }, 6000)
 
     return () => {
       io.disconnect()
       window.clearTimeout(fallback)
+      window.clearTimeout(hardFallback)
     }
   }, [])
 

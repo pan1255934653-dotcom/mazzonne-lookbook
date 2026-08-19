@@ -43,7 +43,15 @@ export default function Compare() {
           <Reveal key={p.name} delay={i * 60}>
             <div className="grid items-center gap-6 md:grid-cols-[1fr_auto_1fr]">
               <figure className="overflow-hidden border border-black/15 bg-white">
-                <img src={p.before.src} alt={p.before.alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                <img
+                  src={p.before.src}
+                  srcSet={`${p.before.src.replace('.webp', '-m.webp')} 780w, ${p.before.src} 1400w`}
+                  sizes="(max-width: 768px) 92vw, 44vw"
+                  alt={p.before.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/3] w-full object-cover"
+                />
                 <figcaption className="border-t border-black/10 px-4 py-2.5 font-mono-num text-[10px] tracking-[0.25em] text-black/55">
                   {p.before.label}
                 </figcaption>
@@ -58,7 +66,15 @@ export default function Compare() {
               </div>
 
               <figure className="overflow-hidden border border-black/15 bg-[#ded9cd]">
-                <img src={p.after.src} alt={p.after.alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                <img
+                  src={p.after.src}
+                  srcSet={`${p.after.src.replace('.webp', '-m.webp')} 780w, ${p.after.src} 1400w`}
+                  sizes="(max-width: 768px) 92vw, 44vw"
+                  alt={p.after.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/3] w-full object-cover"
+                />
                 <figcaption className="border-t border-white/10 bg-black px-4 py-2.5 font-mono-num text-[10px] tracking-[0.25em] text-[#f2efe8]/70">
                   {p.after.label}
                 </figcaption>

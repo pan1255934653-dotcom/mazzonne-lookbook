@@ -7,7 +7,7 @@ interface Step {
   toolClass: string
   lead: string
   points: { k: string; v: string }[]
-  images: { src: string; alt: string; caption?: string; wide?: boolean }[]
+  images: { src: string; w: number; h: number; alt: string; caption?: string; wide?: boolean }[]
   note?: string
 }
 
@@ -24,10 +24,10 @@ const steps: Step[] = [
       { k: '标准化采集', v: '统一光线、角度与构图规范，保证单品库数据质量稳定，整条流水线可复用' },
     ],
     images: [
-      { src: 'images/cloth-offshoulder.webp', alt: '手机平拍的白色一字肩上衣样衣', caption: '一字肩上衣 · 平拍' },
-      { src: 'images/cloth-dress.webp', alt: '手机平拍的波点吊带裙样衣', caption: '波点吊带裙 · 平拍' },
-      { src: 'images/cloth-cargo.webp', alt: '手机平拍的军绿工装裤样衣', caption: '军绿工装裤 · 平拍' },
-      { src: 'images/cloth-sneakers.webp', alt: '手机平拍的白色运动鞋', caption: '白色运动鞋 · 平拍' },
+      { src: 'images/cloth-offshoulder.webp', w: 960, h: 1280, alt: '手机平拍的白色一字肩上衣样衣', caption: '一字肩上衣 · 平拍' },
+      { src: 'images/cloth-dress.webp', w: 1050, h: 1400, alt: '手机平拍的波点吊带裙样衣', caption: '波点吊带裙 · 平拍' },
+      { src: 'images/cloth-cargo.webp', w: 960, h: 1280, alt: '手机平拍的军绿工装裤样衣', caption: '军绿工装裤 · 平拍' },
+      { src: 'images/cloth-sneakers.webp', w: 787, h: 1400, alt: '手机平拍的白色运动鞋', caption: '白色运动鞋 · 平拍' },
     ],
   },
   {
@@ -42,9 +42,9 @@ const steps: Step[] = [
       { k: '零差旅勘景', v: '等于把"去新疆勘景"压缩成一次素材收集，成本几乎为零' },
     ],
     images: [
-      { src: 'images/scene-1.webp', alt: '伊犁草原取景参考：云杉林与草场', caption: '参考 · 云杉林草场' },
-      { src: 'images/scene-2.webp', alt: '阿勒泰草原取景参考', caption: '参考 · 阿勒泰' },
-      { src: 'images/scene-3.webp', alt: '伊犁夏日草原取景参考', caption: '参考 · 伊犁之夏' },
+      { src: 'images/scene-1.webp', w: 720, h: 1200, alt: '伊犁草原取景参考：云杉林与草场', caption: '参考 · 云杉林草场' },
+      { src: 'images/scene-2.webp', w: 800, h: 1200, alt: '阿勒泰草原取景参考', caption: '参考 · 阿勒泰' },
+      { src: 'images/scene-3.webp', w: 800, h: 1200, alt: '伊犁夏日草原取景参考', caption: '参考 · 伊犁之夏' },
     ],
   },
   {
@@ -59,10 +59,10 @@ const steps: Step[] = [
       { k: '批量产出再选片', v: '一次生成多组构图，像摄影师选片一样挑出最佳底图进入精修环节' },
     ],
     images: [
-      { src: 'images/mj-process.webp', alt: 'Midjourney 创作后台：moodboard 与摄影参数 prompt', caption: 'Midjourney 后台 · moodboard + 参数化 prompt', wide: true },
-      { src: 'images/mj-out-1.webp', alt: 'Midjourney 生成的草原人像底图', caption: '底图 · 木椅人像' },
-      { src: 'images/mj-out-2.webp', alt: 'Midjourney 生成的鹦鹉肖像底图', caption: '底图 · 鹦鹉肖像' },
-      { src: 'images/mj-out-3.webp', alt: 'Midjourney 生成的细节特写底图', caption: '底图 · 细节特写' },
+      { src: 'images/mj-process.webp', w: 1400, h: 663, alt: 'Midjourney 创作后台：moodboard 与摄影参数 prompt', caption: 'Midjourney 后台 · moodboard + 参数化 prompt', wide: true },
+      { src: 'images/mj-out-1.webp', w: 928, h: 1232, alt: 'Midjourney 生成的草原人像底图', caption: '底图 · 木椅人像' },
+      { src: 'images/mj-out-2.webp', w: 928, h: 1232, alt: 'Midjourney 生成的鹦鹉肖像底图', caption: '底图 · 鹦鹉肖像' },
+      { src: 'images/mj-out-3.webp', w: 928, h: 1232, alt: 'Midjourney 生成的细节特写底图', caption: '底图 · 细节特写' },
     ],
   },
   {
@@ -78,10 +78,10 @@ const steps: Step[] = [
       { k: '画幅重构', v: '3:4 竖图 outpainting 成 16:9 横幅，构图重心重新设计，直接适配视频与电商横幅物料' },
     ],
     images: [
-      { src: 'images/edit-model-swap.webp', alt: '替换模特但保持服装不变的精修成片', caption: '精修 · 替换模特保持服装' },
-      { src: 'images/edit-hand-fix.webp', alt: '手部细节定点修复的成片', caption: '精修 · 手部修正' },
-      { src: 'images/look-06.webp', alt: '裙装版型调整后的草地人像成片', caption: '精修 · 裙装版型调整' },
-      { src: 'images/wide-extend.webp', alt: '3:4 扩展为 16:9 的横幅成片', caption: '精修 · 16:9 画幅扩展', wide: true },
+      { src: 'images/edit-model-swap.webp', w: 939, h: 1400, alt: '替换模特但保持服装不变的精修成片', caption: '精修 · 替换模特保持服装' },
+      { src: 'images/edit-hand-fix.webp', w: 1045, h: 1400, alt: '手部细节定点修复的成片', caption: '精修 · 手部修正' },
+      { src: 'images/look-06.webp', w: 1045, h: 1400, alt: '裙装版型调整后的草地人像成片', caption: '精修 · 裙装版型调整' },
+      { src: 'images/wide-extend.webp', w: 1400, h: 782, alt: '3:4 扩展为 16:9 的横幅成片', caption: '精修 · 16:9 画幅扩展', wide: true },
     ],
   },
   {
@@ -96,8 +96,8 @@ const steps: Step[] = [
       { k: '可复用', v: '下一季只需替换第 01 步的单品库，整条流水线原样复跑' },
     ],
     images: [
-      { src: 'images/look-10.webp', alt: '草地躺姿成片', caption: '成片 · 草地肖像' },
-      { src: 'video/video-poster.webp', alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
+      { src: 'images/look-10.webp', w: 1045, h: 1400, alt: '草地躺姿成片', caption: '成片 · 草地肖像' },
+      { src: 'video/video-poster.webp', w: 787, h: 1400, alt: 'AI 生成视频封面帧', caption: '成片 · 视频封面帧' },
     ],
     note: '完整成片见下方「成片画廊」与「成片视频」。',
   },
@@ -164,7 +164,17 @@ export default function Workflow() {
                           {wide.map((im, wi) => (
                             <Reveal key={im.src} delay={200 + wi * 80}>
                               <figure className="mb-5 overflow-hidden border border-black/15 bg-[#ded9cd]">
-                                <img src={im.src} alt={im.alt} loading="lazy" className="w-full object-cover transition-transform duration-700 hover:scale-[1.02]" />
+                                <img
+                                  src={im.src}
+                                  srcSet={`${im.src.replace('.webp', '-m.webp')} 780w, ${im.src} ${im.w}w`}
+                                  sizes="(max-width: 1280px) 92vw, 1100px"
+                                  width={im.w}
+                                  height={im.h}
+                                  alt={im.alt}
+                                  loading="lazy"
+                                  decoding="async"
+                                  className="h-auto w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
+                                />
                                 {im.caption && (
                                   <figcaption className="bg-black px-4 py-2.5 font-mono-num text-[11px] tracking-widest text-[#f2efe8]/75">
                                     {im.caption}
@@ -179,8 +189,13 @@ export default function Workflow() {
                                 <figure className="overflow-hidden border border-black/15 bg-[#ded9cd]">
                                   <img
                                     src={im.src}
+                                    srcSet={`${im.src.replace('.webp', '-m.webp')} 780w, ${im.src} ${im.w}w`}
+                                    sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 25vw"
+                                    width={im.w}
+                                    height={im.h}
                                     alt={im.alt}
                                     loading="lazy"
+                                    decoding="async"
                                     className="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                   />
                                   {im.caption && (

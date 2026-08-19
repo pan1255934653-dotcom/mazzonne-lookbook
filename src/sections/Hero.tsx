@@ -5,7 +5,11 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <img
           src="images/look-01.webp"
+          srcSet="images/look-01-m.webp 780w, images/look-01.webp 1045w"
+          sizes="100vw"
           alt="MAZZONNE AI 生成草地鹦鹉肖像大片"
+          fetchPriority="high"
+          decoding="async"
           className="animate-hero-zoom h-full w-full object-cover object-center opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black/70" />
